@@ -1,47 +1,29 @@
-import Header from "./assets/Components/Header";
+import Header from "./Components/Header";
+import Cards from "./Components/Cards";
+import Banner from "./Components/Banner";
+import "./Global.css"
 
 
 
-function App() { 
+function App() {
 
-  return (
-    <>
+return (
 
-    <Header/>
-     
-      
-      <hr />
+  <div className="container">
 
-      <section className="banner">
-        <img
-          src="https://placehold.co/1000x300"
-          alt="Banner da Open Pizzaria"
-          width="1000"
-          height="300"
-        />
-      </section>
+    <Header />
 
-      <section>
-        <article>
-          <h1>🍕 Nossas Pizzas</h1>
-          <p>
-            Na Open Pizzaria, você encontra pizzas deliciosas, preparadas com
-            ingredientes selecionados e muito sabor. Escolha seu sabor favorito
-            e aproveite!
-          </p>
-        </article>
+    <Banner  />
 
-        <article>
-          <h1>🔥 Feitas para Você</h1>
-          <p>
-            Nossa massa é preparada com carinho e nossas pizzas saem
-            quentinhas do forno para chegar até você com aquele sabor
-            irresistível.
-          </p>
-        </article>
-      </section>
-    </>
-  );
+    <Cards />
+
+
+  </div>
+)
+
+
+
 }
 
+  
 export default App;
