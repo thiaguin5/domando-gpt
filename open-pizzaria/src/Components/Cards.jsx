@@ -1,7 +1,9 @@
+import "./Cards.css"
+
 const Cards = () => {
   return (
-    <section>
-      <article>
+    <section className="cads">
+      <article className="card">
         <h1>🍕 Nossas Pizzas</h1>
         <p>
           Na Open Pizzaria, você encontra pizzas deliciosas, preparadas com
@@ -10,7 +12,7 @@ const Cards = () => {
         </p>
       </article>
 
-      <article>
+      <article className="card">
         <h1>🔥 Feitas para Você</h1>
         <p>
           Nossa massa é preparada com carinho e nossas pizzas saem
@@ -19,6 +21,10 @@ const Cards = () => {
         </p>
       </article>
     </section>
+
+   
+
+
   );
 };
 

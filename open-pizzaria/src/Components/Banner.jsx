@@ -5,7 +5,7 @@ const Banner = () => {
   return (
      <section className="banner">
       <img
-        src="https://placehold.co/1000x300"
+        src="pizza.jpg"
         alt="Banner da Open Pizzaria"
       />
     </section>
