@@ -1,8 +1,8 @@
 import Header from "./Components/Header";
-import Cards from "./Components/Cards";
-import Banner from "./Components/Banner";
-import Footer from "./Components/footer";
-import Menu from "./Components/Menu";
+import Cards from "./Components/Cards/Index";
+import Banner from "./Components/Banner/Index";
+import Footer from "./Components/Footer/Index";
+import Menu from "./Components/Menu/Index";
 import "./Global.css"
 
 
