@@ -23,6 +23,8 @@ return (
 
     <Cards />
 
+    <FeedBack />
+
     <Footer titleFooter = " Open pizzaria - Todos os direitos reservados new"/>
 
 
