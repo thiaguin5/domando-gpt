@@ -1,10 +1,9 @@
 import Header from "./Components/Header/index";
-import Cards from "./Components/Cards/Index";
-import Banner from "./Components/Banner/Index";
 import Footer from "./Components/Footer/Index";
 import Menu from "./Components/Menu/Index";
-import FeedBack from "./Components/FeedBack/Index";
+import Router from "./Router";
 import "./Global.css";
+
 
 function App() {
   return (
@@ -14,15 +13,12 @@ function App() {
         textHeader="As melhores pizzas, preparadas com carinho para deixar seu momento ainda mais saboroso!"
       />
 
-      <Menu />
+     
 
-      <Banner />
+      <Router />
 
-      <Cards />
-
-      <FeedBack />
-
-      <Footer titleFooter="Open pizzaria - Todos os direitos reservados" />
+     
+      <Footer titleFooter="Open pizzaria - Todos os direitos reservados - 2026" />
     </div>
   );
 }

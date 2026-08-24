@@ -1,14 +1,16 @@
+import {Link} from "react-router-dom"
 import "./Menu.css"
 
 
 const Menu = () => {
 
 return (
-<nav className="navbar">
-  <ul className="menu">
+<nav className="Menu">
+  <ul>
     <li>
-      <a href="#">Home</a>
+     <Link to= "/">Home</Link>
     </li>
+    <Link to= "/sobre">Sobre</Link>
 
     <li>
       <a href="#">Sobre</a>
