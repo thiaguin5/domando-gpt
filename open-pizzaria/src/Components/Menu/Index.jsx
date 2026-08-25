@@ -1,58 +1,56 @@
-import {Link} from "react-router-dom"
-import "./Menu.css"
-
+import { Link } from "react-router-dom";
+import "./Menu.css";
 
 const Menu = () => {
+  return (
+    <nav className="Menu">
+      <ul>
 
-return (
-<nav className="Menu">
-  <ul>
-    <li>
-     <Link to= "/">Home</Link>
-    </li>
-    <Link to= "/sobre">Sobre</Link>
-
-    <li>
-      <a href="#">Sobre</a>
-    </li>
-
-    <li className="submenu">
-      <a href="#">Cardápio ▾</a>
-
-      <ul className="submenu-list">
         <li>
-          <a href="#">Pizzas</a>
+          <Link to="/">Home</Link>
         </li>
 
         <li>
-          <a href="#">Bebidas</a>
+          <Link to="/sobre">Sobre</Link>
+        </li>
+
+        <li className="submenu">
+          <Link to="/cardapio">
+            Cardápio ▾
+          </Link>
+
+          <ul className="submenu-list">
+
+            <li>
+              <Link to="/cardapio">Pizzas</Link>
+            </li>
+
+            <li>
+              <Link to="/cardapio">Bebidas</Link>
+            </li>
+
+            <li>
+              <Link to="/cardapio">Sobremesas</Link>
+            </li>
+
+          </ul>
         </li>
 
         <li>
-          <a href="#">Sobremesas</a>
+          <Link to="/contato">
+            Fale conosco
+          </Link>
         </li>
+
+        <li>
+          <Link to="/faq">
+            FAQ
+          </Link>
+        </li>
+
       </ul>
-    </li>
+    </nav>
+  );
+};
 
-    <li>
-      <a href="#">Fale conosco</a>
-    </li>
-
-    <li>
-      <a href="#">FAQ</a>
-    </li>
-  </ul>
-</nav>
-
-
-
-
-
-
-
-)
-
-}
-
-
-export default Menu
+export default Menu;

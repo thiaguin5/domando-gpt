@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff8ef;
+  color: #333;
+}
+
+.pagina {
+  min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  background: #b71c1c;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.icone {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.cabecalho h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.cabecalho p {
+  font-size: 18px;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* CATEGORIA */
+
+.categoria {
+  margin-bottom: 45px;
+}
+
+.categoria h2 {
+  color: #b71c1c;
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f4a300;
+}
+
+/* CARD DA PIZZA */
+
+.card-pizza {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.card-pizza:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* INFORMAÇÕES */
+
+.informacoes h3 {
+  font-size: 20px;
+  margin-bottom: 7px;
+  color: #222;
+}
+
+.informacoes p {
+  color: #777;
+  line-height: 1.5;
+}
+
+/* PREÇO */
+
+.preco {
+  color: #b71c1c;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/* BOTÃO */
+
+.botao {
+  display: block;
+  width: fit-content;
+
+  margin: 10px auto 45px;
+  padding: 16px 30px;
+
+  background-color: #25d366;
+  color: white;
+
+  text-decoration: none;
+  border-radius: 30px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* RODAPÉ */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+
+  .cabecalho h1 {
+    font-size: 34px;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  .categoria h2 {
+    font-size: 22px;
+  }
+
+  .card-pizza {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .preco {
+    align-self: flex-end;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: center;
+  }
+}
