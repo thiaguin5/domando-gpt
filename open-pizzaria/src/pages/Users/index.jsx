@@ -9,23 +9,32 @@ const [usuarios, setUsuarios] = useState([])
 
 //hook use Effect para lidar com efeitos colaterais no componente
 useEffect(() => {
-  console.log("olaaaa")
-
+ fetch("localhost:3000/users")
+ .then((response) => response.json())
+ .then ((data) => setUsuarios(data))
+ .catch((error) => console.error("Error na API", error))
+ 
 }, [])
 
   return (
     <main className="containerUsers">
       <h1>Lista de usuarios </h1>
       <Link to="/">Voltar para Home</Link>
-      <section className="contentUsers">
-        <article>
-          <strong>Nome: kaio</strong>
-          <strong>Telefone: 12121-12121</strong>
+
+      
+      <section className="contentUsers"> 
+        {usuarios.map ((users) => (
+         <article key ={users.id}>
+          <strong>Nome: {users.nome}</strong>
+           <strong>Email: {users.email}</strong>
+          <strong>Telefone: {users.telefone}</strong>
 
         </article>
 
+      ))}
+       
 
       </section>
-    </main>
+    </main>   
   )
 }

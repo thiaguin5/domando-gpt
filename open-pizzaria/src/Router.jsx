@@ -6,6 +6,7 @@ import Menu from './Components/Menu/Index';
 import Sobre from './pages/Sobre'
 import Cardapio from './pages/Cardapio';
 import Users from './pages/Users';
+import Comentarios from "./pages/Comentarios"
 
 export default function Router() {
   return (
@@ -17,6 +18,8 @@ export default function Router() {
              <Route path="/sobre" element={ <Sobre /> } />
               <Route path="/Cardapio" element={ <Cardapio /> } />
                <Route path="/Users" element={ <Users /> } />
+               <Route path="/Comentarios" element={ <Comentarios /> } />
+
 
 
         </Routes>
