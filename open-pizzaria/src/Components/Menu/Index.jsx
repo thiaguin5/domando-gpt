@@ -10,6 +10,11 @@ const Menu = () => {
           <Link to="/">Home</Link>
         </li>
 
+          <li>
+          <Link to="/Cadastro">Cadastro</Link>
+        </li>
+
+
         <li>
           <Link to="/sobre">Sobre</Link>
         </li>
@@ -43,8 +48,8 @@ const Menu = () => {
         </li>
 
         <li>
-          <Link to="/faq">
-            FAQ
+          <Link to="/users">
+            Usuários
           </Link>
         </li>
 

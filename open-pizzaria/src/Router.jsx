@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Menu from './Components/Menu/Index';
 import Sobre from './pages/Sobre'
 import Cardapio from './pages/Cardapio';
+import Users from './pages/Users';
 
 export default function Router() {
   return (
@@ -15,6 +16,7 @@ export default function Router() {
             <Route path="/" element={ <Home /> } />
              <Route path="/sobre" element={ <Sobre /> } />
               <Route path="/Cardapio" element={ <Cardapio /> } />
+               <Route path="/Users" element={ <Users /> } />
 
 
         </Routes>
