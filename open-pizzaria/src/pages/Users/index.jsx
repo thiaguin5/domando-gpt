@@ -1,40 +1,33 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import "./Users.css"
-import { useEffect, useState } from 'react'
+import './Users.css'
 
-export default function users() {
+export default function Users() {
+  const [usuarios, setUsuarios] = useState([])
 
-  //UseState do react para gerenciar estado dos usuarios
-const [usuarios, setUsuarios] = useState([])
+  useEffect(() => {
+    fetch("http://localhost:3000/users")
+      .then(response => response.json())
+      .then(data => setUsuarios(data))
+      .catch(error => console.error("Erro na API", error))
+  }, [])
 
-//hook use Effect para lidar com efeitos colaterais no componente
-useEffect(() => {
- fetch("localhost:3000/users")
- .then((response) => response.json())
- .then ((data) => setUsuarios(data))
- .catch((error) => console.error("Error na API", error))
- 
-}, [])
+  console.log(usuarios)
 
   return (
     <main className="containerUsers">
-      <h1>Lista de usuarios </h1>
+      <h1>Lista de Usuários</h1>
       <Link to="/">Voltar para Home</Link>
 
-      
-      <section className="contentUsers"> 
-        {usuarios.map ((users) => (
-         <article key ={users.id}>
-          <strong>Nome: {users.nome}</strong>
-           <strong>Email: {users.email}</strong>
-          <strong>Telefone: {users.telefone}</strong>
-
-        </article>
-
-      ))}
-       
-
+      <section className="contentUsers">
+        {usuarios.map(user => (
+          <article key={user.id}>
+            <strong>Nome: </strong> <span>{user.nome}</span>
+            <strong>Email: </strong> <span>{user.email}</span>
+            <strong> Telefone: </strong> <span>{user.telefone}</span>
+          </article>
+        ))}
       </section>
-    </main>   
+    </main>
   )
 }
