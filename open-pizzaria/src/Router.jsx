@@ -6,8 +6,10 @@ import Menu from './Components/Menu/Index';
 import Sobre from './pages/Sobre'
 import Cardapio from './pages/Cardapio';
 import Users from './pages/Users';
-import Comentarios from "./pages/Comentarios"
-import NotFound from "./pages/NotFound"
+import Comentarios from "./pages/Comentarios";
+import NotFound from "./pages/NotFound";
+import Cadastro from "./pages/Cadastro";
+
 
 export default function Router() {
   return (
@@ -21,6 +23,8 @@ export default function Router() {
                <Route path="/Users" element={ <Users /> } />
                <Route path="/Comentarios" element={ <Comentarios /> } />
                <Route path= "*" element = {<NotFound />} />
+               <Route path= "Cadastro" element = {<Cadastro/>} />
+
 
           
         </Routes>

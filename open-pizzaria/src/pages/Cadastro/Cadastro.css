@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+/* Fundo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+
+  display:center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do cadastro */
+.containerCadastro {
+  width: 90%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  padding: 70px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Título */
+.containerCadastro h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Cada campo do formulário */
+.form-control {
+  display: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-control label {
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Inputs */
+.form-control input {
+  width: 100%;
+  padding: 12px 15px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 16px;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+/* Efeito ao clicar no input */
+.form-control input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* Botão */
+.containerCadastro button {
+  width: 100%;
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover do botão */
+.containerCadastro button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .containerCadastro {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .containerCadastro h1 {
+    font-size: 24px;
+  }
+}
