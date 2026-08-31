@@ -7,6 +7,7 @@ import Sobre from './pages/Sobre'
 import Cardapio from './pages/Cardapio';
 import Users from './pages/Users';
 import Comentarios from "./pages/Comentarios"
+import NotFound from "./pages/NotFound"
 
 export default function Router() {
   return (
@@ -19,10 +20,11 @@ export default function Router() {
               <Route path="/Cardapio" element={ <Cardapio /> } />
                <Route path="/Users" element={ <Users /> } />
                <Route path="/Comentarios" element={ <Comentarios /> } />
+               <Route path= "*" element = {<NotFound />} />
 
-
-
+          
         </Routes>
+
     </BrowserRouter>
   )
 }
