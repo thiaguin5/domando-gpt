@@ -12,7 +12,6 @@ export default function index() {
 
   const handleChange  = (event) => {
     const {name, value }= event.target;
-    console.log(nome,value)
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]:value,
@@ -24,9 +23,35 @@ export default function index() {
   //funcao para enviar o formulario
 
   const handleSubmit = (e) => {
-    e.preventdefault()
-   console.log("Enviar .....")
-  }
+    e.preventDefault()
+  
+
+    //enviando os dados para o backend com json
+    fetch("http://localhost:3000/users", {
+       method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+
+    },
+  
+    body: JSON.stringify(formData)
+  })
+
+.then ((response) => response.json ())
+.then ((data) => {
+
+  console.log("usuario cadastrado com sucesso" , data);
+//limpa o fomulario apos o envio 
+setFormData ({
+   nome: "",
+  email: "",
+  telefone: ""
+})
+
+})
+
+}
+  
 
 
   return (
@@ -52,6 +77,7 @@ export default function index() {
                     name="email" 
                     placeholder="Digite seu Email"
                     value={formData.email}
+                    onChange={handleChange}
                 />
             </article>
 
@@ -62,6 +88,7 @@ export default function index() {
                     name="telefone" 
                     placeholder="Digite seu telefone"
                     value={formData.telefone}
+                      onChange={handleChange}
                 />
             </article>
 
