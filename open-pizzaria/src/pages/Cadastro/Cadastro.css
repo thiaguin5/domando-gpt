@@ -1,45 +1,37 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  
 }
 
-/* Fundo da página */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  min-height: 100vh;
-
-  display:center;
-  justify-content: center;
-  align-items: center;
+  background: #f4f6f8;
+  color: #222;
 }
 
-/* Container do cadastro */
+/* Container principal */
 .containerCadastro {
-  width: 90%;
-  max-width: 1000px;
-  background-color: #ffffff;
-  padding: 70px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
-
 
 /* Título */
 .containerCadastro h1 {
   text-align: center;
-  color: #333;
   margin-bottom: 30px;
   font-size: 28px;
+  color: #222;
 }
 
-/* Cada campo do formulário */
+/* Cada campo */
 .form-control {
-  display: center;
+  display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
@@ -47,60 +39,72 @@ body {
 /* Labels */
 .form-control label {
   margin-bottom: 8px;
-  color: #444;
-  font-weight: bold;
   font-size: 15px;
+  font-weight: 600;
+  color: #333;
 }
 
 /* Inputs */
 .form-control input {
   width: 100%;
-  padding: 12px 15px;
+  height: 45px;
+  padding: 0 12px;
 
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 7px;
 
-  font-size: 16px;
+  font-size: 15px;
   outline: none;
 
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
-/* Efeito ao clicar no input */
+/* Quando clicar no input */
 .form-control input:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Placeholder */
+.form-control input::placeholder {
+  color: #999;
 }
 
 /* Botão */
 .containerCadastro button {
   width: 100%;
-  padding: 13px;
+  height: 45px;
 
   border: none;
-  border-radius: 8px;
+  border-radius: 7px;
 
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #2563eb;
   color: white;
 
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
 
   cursor: pointer;
-  transition: 0.3s;
+
+  transition: 0.2s;
 }
 
 /* Hover do botão */
 .containerCadastro button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  background: #1d4ed8;
+}
+
+/* Quando clicar */
+.containerCadastro button:active {
+  transform: scale(0.98);
 }
 
 /* Responsividade */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .containerCadastro {
-    margin: 20px;
-    padding: 25px;
+    width: calc(100% - 30px);
+    margin: 30px auto;
+    padding: 25px 20px;
   }
 
   .containerCadastro h1 {
