@@ -20,6 +20,7 @@
   font-weight: 600;
 }
 
+
 .containerUsers > a:hover {
   text-decoration: underline;
 }
@@ -79,3 +80,19 @@
     gap: 8px;
   }
 }
+
+.btn-delete{
+
+  background: rgb(212, 14, 14);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff
+  
+  
+  
+}
+

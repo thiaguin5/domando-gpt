@@ -1,28 +1,67 @@
 {
   "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
   ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ],
   "profile": {
     "name": "typicode"
   },
   "users": [
-    { "nome": "João Silva", "email": "joao@email.com", "telefone": "11999990001" },
-    { "nome": "Maria Santos", "email": "maria@email.com", "telefone": "11999990002" },
-    {  "nome": "Pedro Oliveira", "email": "pedro@email.com", "telefone": "11999990003" },
-    {  "nome": "Ana Souza", "email": "ana@email.com", "telefone": "11999990004" },
-    { "nome": "Carlos Pereira", "email": "carlos@email.com", "telefone": "11999990005" },
-    { "nome": "Juliana Costa", "email": "juliana@email.com", "telefone": "11999990006" },
-    {  "nome": "Lucas Almeida", "email": "lucas@email.com", "telefone": "11999990007" },
-    { "nome": "Fernanda Lima", "email": "fernanda@email.com", "telefone": "11999990008" },
-    {"nome": "Rafael Martins", "email": "rafael@email.com", "telefone": "11999990009" },
-    { "nome": "Camila Rodrigues", "email": "camila@email.com", "telefone": "11999990010" },
-     { "nome": "jhonatan", "email": "jhonatan@email.com", "telefone": "11999890010" }
+    {
+      "nome": "Caio",
+      "email": "caio@dgdfdf",
+      "telefone": "caio",
+      "id": 1
+    },
+    {
+      "nome": "Rodriginho",
+      "email": "7878787@hotmail.com",
+      "telefone": "dfdfdfd",
+      "id": 2
+    },
+    {
+      "nome": "Dan",
+      "email": "dan@hotmail.com",
+      "telefone": "8787878",
+      "id": 3
+    },
+    {
+      "nome": "Kaio",
+      "email": "kaio@hotmail.com",
+      "telefone": "78787",
+      "id": 4
+    },
+    {
+      "nome": "Pedro",
+      "email": "pedro@gmail.com",
+      "telefone": "89878787",
+      "id": 5
+    },
+    {
+      "nome": "David Lisboa",
+      "email": "davidlisboa92@gmail.com",
+      "telefone": "7887878",
+      "id": 6
+    }
   ]
-  
 }
-  
