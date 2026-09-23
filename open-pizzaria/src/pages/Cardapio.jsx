@@ -35,6 +35,10 @@ function Cardapio() {
 
         <h1>Cardápio</h1>
 
+        <br />
+        <br />
+        <br />
+
        
       </header>
 
@@ -43,6 +47,7 @@ function Cardapio() {
         <section className="categoria">
 
           <h2>Pizzas</h2>
+          <br />
 
           <div className="lista-pizzas">
 
@@ -74,7 +79,11 @@ function Cardapio() {
 
         <section className="categoria">
 
-          <h2>🥤 Bebidas</h2>
+          <h2>Bebidas</h2>
+          <br />
+          
+
+          
 
           <div className="card-pizza">
 
