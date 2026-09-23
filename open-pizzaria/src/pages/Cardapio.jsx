@@ -5,25 +5,25 @@ const pizzas = [
     nome: "Calabresa",
     descricao: "Molho de tomate, mussarela, calabresa fatiada e cebola.",
     preco: "R$ 42,90",
-    imagem: "/public/cala.png",
+    imagem: "/imagens/cala.png",
   },
   {
     nome: "Mussarela",
     descricao: "Molho de tomate, mussarela, tomate e orégano.",
     preco: "R$ 39,90",
-    imagem: "/public/mus.png",
+    imagem: "/imagens/mus.png",
   },
   {
     nome: "Frango com Catupiry",
     descricao: "Frango desfiado, mussarela e Catupiry.",
     preco: "R$ 46,90",
-    imagem: "/public/fra.png",
+    imagem: "/imagens/fra.png",
   },
   {
     nome: "Portuguesa",
     descricao: "Presunto, ovos, cebola, milho, ervilha e azeitona.",
     preco: "R$ 47,90",
-    imagem: "/public/port.png",
+    imagem: "/imagens/port.png",
   },
 ];
 function Cardapio() {
@@ -79,7 +79,7 @@ function Cardapio() {
           <div className="card-pizza">
 
             <img
-               src="/public/refri.jpg"
+               src="/imagens/refri.jpg"
               alt="Refrigerantes"
               className="imagem-pizza"
             />
