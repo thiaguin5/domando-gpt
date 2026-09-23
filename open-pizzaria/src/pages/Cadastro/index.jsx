@@ -27,7 +27,7 @@ export default function index() {
   
 
     //enviando os dados para o backend com json
-    fetch("https://minha-api.onrender.com/users",  {
+    fetch("https://domando-gpt-1.onrender.com",  {
        method: "POST",
     headers: {
       "Content-Type": "application/json"
