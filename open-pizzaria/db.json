@@ -26,18 +26,5 @@
   "profile": {
     "name": "typicode"
   },
-  "users": [
-    {
-      "nome": "Thiago Amaral",
-      "email": "amaralt778@gmail.com",
-      "telefone": "23232-2322",
-      "id": 7
-    },
-    {
-      "nome": "sdsdsd",
-      "email": "",
-      "telefone": "",
-      "id": 8
-    }
-  ]
+  "users": []
 }

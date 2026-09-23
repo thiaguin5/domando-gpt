@@ -61,7 +61,7 @@ body {
 
 /* Quando clicar no input */
 .form-control input:focus {
-  border-color: #2563eb;
+  border-color: #eb1010;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
@@ -78,7 +78,7 @@ body {
   border: none;
   border-radius: 7px;
 
-  background: #2563eb;
+  background: #f51818;
   color: white;
 
   font-size: 16px;

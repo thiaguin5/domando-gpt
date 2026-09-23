@@ -4,7 +4,7 @@ const Cards = () => {
   return (
     <section className="cads">
       <article className="card">
-        <h1>🍕 Nossas Pizzas</h1>
+        <h1>Nossas Pizzas</h1>
         <p>
           Na Open Pizzaria, você encontra pizzas deliciosas, preparadas com
           ingredientes selecionados e muito sabor. Escolha seu sabor favorito
@@ -13,7 +13,7 @@ const Cards = () => {
       </article>
 
       <article className="card">
-        <h1>🔥 Feitas para Você</h1>
+        <h1>Feitas para Você</h1>
         <p>
           Nossa massa é preparada com carinho e nossas pizzas saem
           quentinhas do forno para chegar até você com aquele sabor
