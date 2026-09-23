@@ -2,15 +2,13 @@ footer {
   width: 100%;
   background: #ff6b00;
   color: #ffffff;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
+  font-family:
+  "Bree Serif", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 10px 10px;
   margin-top: 50px;
-
   box-sizing: border-box;
   border-radius: 10px;
 }
