@@ -7,6 +7,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  font-family: Georgia, "Times New Roman", serif;
+ text-align: center;
+
 }
 
 .card {
@@ -28,6 +31,9 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+    font-family: Georgia, "Times New Roman", serif;
+ text-align: center;
+
 }
 
 /* Detalhe colorido no topo */

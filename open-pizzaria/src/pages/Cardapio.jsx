@@ -11,7 +11,7 @@ const pizzas = [
     nome: "Mussarela",
     descricao: "Molho de tomate, mussarela, tomate e orégano.",
     preco: "R$ 39,90",
-    imagem: "/imagens/mus.png",
+    imagem: "/imagens/mus2.jpg",
   },
   {
     nome: "Frango com Catupiry",
@@ -33,7 +33,7 @@ function Cardapio() {
       <header className="cabecalho">
         <div className="icone"></div>
 
-        <h1>Cardápio</h1>
+        <h1>Nosso Cardápio</h1>
 
         <br />
         <br />

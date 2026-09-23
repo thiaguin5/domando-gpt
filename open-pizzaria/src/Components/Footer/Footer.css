@@ -11,6 +11,9 @@ footer {
   margin-top: 50px;
   box-sizing: border-box;
   border-radius: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+
 }
 
 footer h1 {

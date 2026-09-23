@@ -6,7 +6,7 @@ export default function Sobre() {
     <div className="sobre">
       <div className="sobre-container">
 
-        <h1>🍕 Sobre Nossa Pizzaria</h1>
+        <h1>Sobre Nossa Pizzaria</h1>
 
         <p className="introducao">
           Mais do que uma pizzaria, somos um lugar para reunir a família,
@@ -28,7 +28,7 @@ export default function Sobre() {
           <label htmlFor="equipe">Nossa Equipe</label>
 
           <div className="conteudo historia">
-            <h2>🍕 Nossa História</h2>
+            <h2>Nossa História</h2>
             <p>
               Nossa pizzaria nasceu da paixão por pizzas artesanais e pelo
               desejo de reunir pessoas ao redor de uma boa mesa. Começamos

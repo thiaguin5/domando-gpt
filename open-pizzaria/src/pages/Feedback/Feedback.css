@@ -19,6 +19,9 @@ css
 
   padding: 20px;
   box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+
 }
 .feedback-box h1 {
   text-align: center;

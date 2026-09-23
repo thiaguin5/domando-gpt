@@ -27,7 +27,7 @@ export default function index() {
   
 
     //enviando os dados para o backend com json
-    fetch("http://localhost:3000/users", {
+    fetch("https://minha-api.onrender.com/users",  {
        method: "POST",
     headers: {
       "Content-Type": "application/json"
