@@ -35,14 +35,14 @@ function Cardapio() {
 
         <h1>Cardápio</h1>
 
-        <p>Escolha sua pizza favorita!</p>
+       
       </header>
 
       <main className="container">
 
         <section className="categoria">
 
-          <h2>🍕 Pizzas</h2>
+          <h2>Pizzas</h2>
 
           <div className="lista-pizzas">
 
