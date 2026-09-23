@@ -31,7 +31,7 @@ function Cardapio() {
     <div className="pagina">
 
       <header className="cabecalho">
-        <div className="icone">🍕</div>
+        <div className="icone"></div>
 
         <h1>Cardápio</h1>
 
