@@ -21,30 +21,14 @@ const Menu = () => {
 
         <li className="submenu">
           <Link to="/cardapio">
-            Cardápio ▾
+            Cardápio 
           </Link>
 
           <ul className="submenu-list">
 
-            <li>
-              <Link to="/cardapio">Pizzas</Link>
-            </li>
-
-            <li>
-              <Link to="/cardapio">Bebidas</Link>
-            </li>
-
-            <li>
-              <Link to="/cardapio">Sobremesas</Link>
-            </li>
+           
 
           </ul>
-        </li>
-
-        <li>
-          <Link to="/contato">
-            Fale conosco
-          </Link>
         </li>
 
         <li>
@@ -52,6 +36,13 @@ const Menu = () => {
             Usuários
           </Link>
         </li>
+
+         <li>
+          <Link to="/Feedback">
+            Feedback
+          </Link>
+        </li>
+
 
          
 

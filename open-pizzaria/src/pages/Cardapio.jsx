@@ -1,4 +1,3 @@
-
 import "./Cardapio.css";
 
 const pizzas = [
@@ -6,24 +5,27 @@ const pizzas = [
     nome: "Calabresa",
     descricao: "Molho de tomate, mussarela, calabresa fatiada e cebola.",
     preco: "R$ 42,90",
+    imagem: "/public/cala.png",
   },
   {
     nome: "Mussarela",
     descricao: "Molho de tomate, mussarela, tomate e orégano.",
     preco: "R$ 39,90",
+    imagem: "/public/mus.png",
   },
   {
     nome: "Frango com Catupiry",
     descricao: "Frango desfiado, mussarela e Catupiry.",
     preco: "R$ 46,90",
+    imagem: "/public/fra.png",
   },
   {
     nome: "Portuguesa",
     descricao: "Presunto, ovos, cebola, milho, ervilha e azeitona.",
     preco: "R$ 47,90",
+    imagem: "/public/port.png",
   },
 ];
-
 function Cardapio() {
   return (
     <div className="pagina">
@@ -42,21 +44,31 @@ function Cardapio() {
 
           <h2>🍕 Pizzas</h2>
 
-          {pizzas.map((pizza) => (
-            <div className="card-pizza" key={pizza.nome}>
+          <div className="lista-pizzas">
 
-              <div className="informacoes">
-                <h3>{pizza.nome}</h3>
+            {pizzas.map((pizza) => (
+              <div className="card-pizza" key={pizza.nome}>
 
-                <p>{pizza.descricao}</p>
+                <img
+                  src={pizza.imagem}
+                  alt={`Pizza de ${pizza.nome}`}
+                  className="imagem-pizza"
+                />
+
+                <div className="informacoes">
+                  <h3>{pizza.nome}</h3>
+
+                  <p>{pizza.descricao}</p>
+                </div>
+
+                <strong className="preco">
+                  {pizza.preco}
+                </strong>
+
               </div>
+            ))}
 
-              <strong className="preco">
-                {pizza.preco}
-              </strong>
-
-            </div>
-          ))}
+          </div>
 
         </section>
 
@@ -65,6 +77,12 @@ function Cardapio() {
           <h2>🥤 Bebidas</h2>
 
           <div className="card-pizza">
+
+            <img
+               src="/public/refri.jpg"
+              alt="Refrigerantes"
+              className="imagem-pizza"
+            />
 
             <div className="informacoes">
               <h3>Refrigerante 2L</h3>
@@ -80,24 +98,7 @@ function Cardapio() {
 
           </div>
 
-          <div className="card-pizza">
-
-            <div className="informacoes">
-              <h3>Água 500ml</h3>
-
-              <p>
-                Água mineral sem gás.
-              </p>
-            </div>
-
-            <strong className="preco">
-              R$ 4,00
-            </strong>
-
-          </div>
-
         </section>
-
         <a
           className="botao"
           href="https://wa.me/5511999999999"
@@ -122,3 +123,4 @@ function Cardapio() {
 }
 
 export default Cardapio;
+

@@ -8,6 +8,7 @@ import Cardapio from './pages/Cardapio';
 import Users from './pages/Users';
 import NotFound from "./pages/NotFound";
 import Cadastro from "./pages/Cadastro";
+import Feedback from './pages/Feedback';
 
 
 export default function Router() {
@@ -22,6 +23,7 @@ export default function Router() {
                <Route path="/Users" element={ <Users /> } />
                <Route path= "*" element = {<NotFound />} />
                <Route path= "Cadastro" element = {<Cadastro/>} />
+                <Route path= "Feedback" element = {<Feedback/>} />
 
 
           
