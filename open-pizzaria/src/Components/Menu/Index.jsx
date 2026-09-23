@@ -53,11 +53,7 @@ const Menu = () => {
           </Link>
         </li>
 
-         <li>
-          <Link to="/Comentarios">
-            Comentarios
-          </Link>
-        </li>
+         
 
 
       </ul>

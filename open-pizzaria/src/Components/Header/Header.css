@@ -1,34 +1,243 @@
-  .header-pizzaria {
-        background: linear-gradient(135deg, #b71c1c, #e65100);
-        color: #fff;
-        text-align: center;
+/* ==============================
+   HEADER - PIZZARIA RÚSTICA
+   ============================== */
+
+.header-pizzaria {
+    position: relative;
+    width: 100%;
+    min-height: 260px;
+    padding: 55px 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: #fff8e7;
+
+    background:
+        linear-gradient(
+            rgba(55, 25, 12, 0.82),
+            rgba(35, 14, 7, 0.88)
+        ),
+        url("https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 1px solid rgba(218, 165, 90, 0.35);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+
+    overflow: hidden;
+}
+
+
+/* Textura rústica */
+
+.header-pizzaria::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.025) 0px,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px,
+            transparent 5px
+        );
+
+    pointer-events: none;
+}
+
+
+/* Brilho central */
+
+.header-pizzaria::after {
+    content: "";
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -250px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(218, 165, 90, 0.08);
+
+    border-radius: 50%;
+
+    filter: blur(40px);
+
+    pointer-events: none;
+}
+
+
+/* ==============================
+   TÍTULO
+   ============================== */
+
+.header-pizzaria h1 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(2.3rem, 5vw, 4.5rem);
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #fff3d0;
+
+    text-shadow:
+        0 3px 0 #4b1d0b,
+        0 6px 15px rgba(0, 0, 0, 0.55);
+
+    animation: aparecerTitulo 0.8s ease-out;
+}
+
+
+/* ==============================
+   SUBTÍTULO
+   ============================== */
+
+.header-pizzaria p {
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+
+    margin: 15px 0 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    letter-spacing: 1px;
+
+    color: #ead8b0;
+
+    animation: aparecerTexto 1s ease-out;
+}
+
+
+/* ==============================
+   DETALHE DECORATIVO
+   ============================== */
+
+.header-pizzaria p::before,
+.header-pizzaria p::after {
+    content: "✦";
+
+    margin: 0 15px;
+
+    color: #d6a354;
+
+    font-size: 0.8rem;
+}
+
+
+/* ==============================
+   DIVISOR
+   ============================== */
+
+.divider {
+    width: 85%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    border: none;
+
+    border-top: 2px solid #c89b5b;
+
+    position: relative;
+}
+
+
+/* ==============================
+   ANIMAÇÕES
+   ============================== */
+
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .header-pizzaria {
+        min-height: 220px;
         padding: 45px 20px;
-        border-radius: 15px;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        margin-bottom: 25px;
     }
 
     .header-pizzaria h1 {
-        margin: 0 0 12px;
-        font-size: 38px;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
+        font-size: 2.4rem;
+        letter-spacing: 1px;
     }
 
     .header-pizzaria p {
-        margin: 0;
-        font-size: 19px;
-        font-family: Arial, sans-serif;
-        color: #fff3e0;
+        font-size: 1rem;
     }
 
-    .divider {
-        border: none;
-        height: 3px;
-        background: linear-gradient(to right, #b71c1c, #ff9800, #b71c1c);
-        margin: 25px 0;
-        border-radius: 5px;
+    .header-pizzaria p::before,
+    .header-pizzaria p::after {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .header-pizzaria {
+        min-height: 190px;
+        padding: 35px 15px;
     }
 
-    
+    .header-pizzaria h1 {
+        font-size: 2rem;
+    }
 
+    .header-pizzaria p {
+        font-size: 0.95rem;
+    }
+}

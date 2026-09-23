@@ -28,40 +28,16 @@
   },
   "users": [
     {
-      "nome": "Caio",
-      "email": "caio@dgdfdf",
-      "telefone": "caio",
-      "id": 1
+      "nome": "Thiago Amaral",
+      "email": "amaralt778@gmail.com",
+      "telefone": "23232-2322",
+      "id": 7
     },
     {
-      "nome": "Rodriginho",
-      "email": "7878787@hotmail.com",
-      "telefone": "dfdfdfd",
-      "id": 2
-    },
-    {
-      "nome": "Dan",
-      "email": "dan@hotmail.com",
-      "telefone": "8787878",
-      "id": 3
-    },
-    {
-      "nome": "Kaio",
-      "email": "kaio@hotmail.com",
-      "telefone": "78787",
-      "id": 4
-    },
-    {
-      "nome": "Pedro",
-      "email": "pedro@gmail.com",
-      "telefone": "89878787",
-      "id": 5
-    },
-    {
-      "nome": "David Lisboa",
-      "email": "davidlisboa92@gmail.com",
-      "telefone": "7887878",
-      "id": 6
+      "nome": "sdsdsd",
+      "email": "",
+      "telefone": "",
+      "id": 8
     }
   ]
 }
