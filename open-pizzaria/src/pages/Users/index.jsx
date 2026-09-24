@@ -10,7 +10,7 @@ export default function index() {
     // Busca os usuários quando o componente for montado
     useEffect(() => {
 
-        fetch("http://localhost:3000/users")
+         fetch("https://domando-gpt-1.onrender.com")
             .then((response) => response.json())
             .then((data) => setUsuarios(data))
             .catch((error) => console.error("Erro na API", error))
@@ -23,7 +23,7 @@ const deletarUsuario = (id) => {
     console.log("ID clicado:", id);
     console.log("Usuários:", usuarios);
 
-    fetch(`http://localhost:3000/users/${id}`, {
+    fetch(`https://domando-gpt-1.onrender.com/users/${id}`, {
         method: "DELETE",
     })
     .then(() => {
